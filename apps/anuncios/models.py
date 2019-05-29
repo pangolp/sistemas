@@ -92,7 +92,7 @@ class Faq(models.Model):
 
 	def save(self):
 		self.slug = slugify(self.titulo)
-		super(Evento, self).save()
+		super(Faq, self).save()
 
 	class Meta:
 		db_table = 'faq'
