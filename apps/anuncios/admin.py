@@ -22,6 +22,10 @@ class NovedadAdmin(admin.ModelAdmin):
 		'activo'
 	)
 
+	def save_model(self, request, obj, form, change):
+		obj.autor = request.user
+		super().save_model(request, obj, form, change)
+
 
 @admin.register(Lugar)
 class LugarAdmin(admin.ModelAdmin):
@@ -46,6 +50,10 @@ class EventoAdmin(admin.ModelAdmin):
 		'autor',
 		'activo'
 	)
+
+	def save_model(self, request, obj, form, change):
+		obj.autor = request.user
+		super().save_model(request, obj, form, change)
 
 
 @admin.register(Faq)
