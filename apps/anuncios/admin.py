@@ -22,6 +22,8 @@ class NovedadAdmin(admin.ModelAdmin):
 		'activo'
 	)
 
+	filter_horizontal = ('novedad_categoria',)
+
 	def save_model(self, request, obj, form, change):
 		obj.autor = request.user
 		super().save_model(request, obj, form, change)
@@ -65,3 +67,5 @@ class FaqAdmin(admin.ModelAdmin):
 		'slug',
 		'activo'
 	)
+
+	filter_horizontal = ('faq_categoria',)
