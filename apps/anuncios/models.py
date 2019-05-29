@@ -5,6 +5,7 @@ from django.template.defaultfilters import slugify
 
 class Categoria(models.Model):
 	nombre = models.CharField(max_length=70, blank=False, null=False)
+	activo = models.BooleanField(default=True)
 
 	def __str__(self):
 		return '%s' % (self.nombre)
@@ -23,6 +24,7 @@ class Novedad(models.Model):
 	contenido = models.TextField()
 	enlace = models.URLField(blank=True, null=True)
 	slug = models.SlugField(max_length=255, unique=True, editable=False)
+	activo = models.BooleanField(default=True)
 
 	class Meta:
 		verbose_name_plural = 'novedades'
@@ -38,6 +40,7 @@ class Novedad(models.Model):
 
 class Lugar(models.Model):
 	nombre = models.CharField(max_length=255, help_text='salón de uso múltiple')
+	activo = models.BooleanField(default=True)
 
 	def __str__(self):
 		return '%s' % (self.nombre)
@@ -60,6 +63,7 @@ class Evento(models.Model):
 	disertantes = models.TextField(blank=True, null=True)
 	autor = models.ForeignKey(User, on_delete=models.CASCADE, editable=False)
 	slug = models.SlugField(max_length=255, unique=True, editable=False)
+	activo = models.BooleanField(default=True)
 
 	def __str__(self):
 		return '%s - %s' % (self.titulo, self.fecha_inicio)
@@ -80,6 +84,7 @@ class Faq(models.Model):
 	creada = models.DateTimeField(auto_now_add=True)
 	modificada = models.DateTimeField(auto_now=True)
 	slug = models.SlugField(max_length=255, unique=True, editable=False)
+	activo = models.BooleanField(default=True)
 
 	def __str__(self):
 		return '%s' % (self.titulo)
