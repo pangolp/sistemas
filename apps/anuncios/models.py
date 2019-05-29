@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.template.defaultfilters import slugify
+from ckeditor.fields import RichTextField
 
 
 class Categoria(models.Model):
@@ -21,7 +22,7 @@ class Novedad(models.Model):
 	modificada = models.DateTimeField(auto_now=True)
 	novedad_categoria = models.ManyToManyField(Categoria)
 	titulo = models.CharField(max_length=255, blank=False, null=False)
-	contenido = models.TextField()
+	contenido = RichTextField()
 	enlace = models.URLField(blank=True, null=True)
 	slug = models.SlugField(max_length=255, unique=True, editable=False)
 	activo = models.BooleanField(default=True)
@@ -57,10 +58,10 @@ class Evento(models.Model):
 	hora_inicio = models.TimeField('horario de comienzo', blank=True, null=True)
 	hora_fin = models.TimeField('horario de finalización', blank=True, null=True)
 	titulo = models.CharField(max_length=255, blank=False, null=False)
-	contenido = models.TextField()
+	contenido = RichTextField()
 	lugar = models.ForeignKey(Lugar, on_delete=models.CASCADE)
 	enlace = models.URLField(blank=True, null=True, help_text='Enlace externo a un sitio web para más información.')
-	disertantes = models.TextField(blank=True, null=True)
+	disertantes = RichTextField(blank=True, null=True)
 	autor = models.ForeignKey(User, on_delete=models.CASCADE, editable=False)
 	slug = models.SlugField(max_length=255, unique=True, editable=False)
 	activo = models.BooleanField(default=True)
@@ -79,7 +80,7 @@ class Evento(models.Model):
 
 class Faq(models.Model):
 	titulo = models.CharField(max_length=255)
-	respuesta = models.TextField()
+	respuesta = RichTextField()
 	faq_categoria = models.ManyToManyField(Categoria)
 	creada = models.DateTimeField(auto_now_add=True)
 	modificada = models.DateTimeField(auto_now=True)

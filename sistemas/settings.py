@@ -40,7 +40,7 @@ DJANGO_APPS = [
 ]
 
 THIRD_PARTY_APPS = [
-    # Acá las aplicaciones de tercero, como Pillow o Rest Framework
+    'ckeditor',
 ]
 
 LOCAL_APPS = [
