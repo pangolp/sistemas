@@ -1,6 +1,7 @@
 from django.db import models
 from django.template.defaultfilters import slugify
 from ckeditor.fields import RichTextField
+from apps.usuarios.models import Profesor
 
 
 class Año(models.Model):
@@ -19,7 +20,7 @@ class Año(models.Model):
 class Materia(models.Model):
 	año = models.ForeignKey(Año, on_delete=models.CASCADE)
 	nombre = models.CharField(max_length=255, blank=False, null=False, unique=True)
-	profesores = RichTextField(blank=True, null=True)
+	profesores = models.ManyToManyField(Profesor)
 	observación = RichTextField(blank=True, null=True)
 	slug = models.SlugField(max_length=255, editable=False)
 
