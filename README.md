@@ -5,6 +5,8 @@ En el año 2013 / 2014, desempeñe tareas administrativas para el departamento d
 
 Si bien el proyecto original no se encontraba dividido en apps o módulos, permitía registrar los siguientes modelos de datos. Por modelo, hacerlo mención a las tablas, las cuales son creadas gracias al ORM de Django.
 
+## Modulos o apps (aplicaciones)
+
 1. Anuncios
 	- [x] Categoria
 	- [x] Novedad
@@ -32,14 +34,17 @@ Les recomiendo instalar un entorno virtual, con las depencias, para no tener con
 C:\Users\usuario> python -m venv nombre_entorno
 ```
 
-### Recuerden, activar el entorno.
-En Windows por ejemplo, seria de la siguiente manera:
-C:\Users\usuario> nombre_entorno\Scripts\activate
+## Recuerden, activar el entorno.
 
-Recuerden que en el fichero: requirements.txt podrán obtener el listado completo de las depencias y que utilizando el comando:
+### En Windows por ejemplo, seria de la siguiente manera:
+
+```sh
+C:\Users\usuario> nombre_entorno\Scripts\activate
+```
+
+### Instalar dependencias del proyecto
 
 ```sh
 (nombre_entorno) C:\Users\usuario> pip install -r requirements.txt
 ```
 
-Recuerden a su vez, realizar un fork del repositorio si desean colaborar, dado que la rama master, se encontrara bloqueada.
