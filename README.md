@@ -10,16 +10,16 @@ Si bien el proyecto original no se encontraba dividido en apps o módulos, permi
 	- [x] Novedad
 	- [x] Evento
 	- [x] Faq (Preguntas frecuentes)
-2. Academico
+2. Academicos
 	- [ ] Ps (Practica supervisada)
 	- [x] Materias
 	- [ ] Aulas
-3. Documentación en general
+3. Documentos
 	- [x] Programa (Syllabus)
 4. Usuarios
-	- [ ] Autoridades
+	- [x] Autoridades
 	- [ ] Alumnos
-	- [ ] Docentes
+	- [x] Docentes
 	
 
 En ese momento, yo no manejaba del todo los sistemas de control de versiones y debido a que “deje de darle soporte” el mismo, fue reemplazado por un drupal. Sitio actual que se encuentra en el departamento de sistemas.
