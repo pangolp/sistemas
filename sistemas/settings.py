@@ -46,6 +46,7 @@ THIRD_PARTY_APPS = [
 LOCAL_APPS = [
     # Acá configuramos nuestras propias aplicaciones.
     'apps.anuncios',
+    'apps.documentos',
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
@@ -133,3 +134,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
+
+MEDIA_URL = '/media/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
