@@ -28,10 +28,18 @@ Les comparto el proyecto, dado que a alguien le puede servir de guía y los invi
 
 Les recomiendo instalar un entorno virtual, con las depencias, para no tener conflictos mientras trabajan con las mismas.
 
+```sh
+C:\Users\usuario> python -m venv nombre_entorno
+```
+
+### Recuerden, activar el entorno.
+En Windows por ejemplo, seria de la siguiente manera:
+C:\Users\usuario> nombre_entorno\Scripts\activate
+
 Recuerden que en el fichero: requirements.txt podrán obtener el listado completo de las depencias y que utilizando el comando:
 
 ```sh
-pip install -r requirements.txt
+(nombre_entorno) C:\Users\usuario> pip install -r requirements.txt
 ```
 
 Recuerden a su vez, realizar un fork del repositorio si desean colaborar, dado que la rama master, se encontrara bloqueada.
