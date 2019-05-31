@@ -17,7 +17,7 @@ Si bien el proyecto original no se encontraba dividido en apps o módulos, permi
 	- [ ] Materia
 	- [ ] Programa (Syllabus)
 	- [ ] Aula asignada
-6.	[ ] Documentación en general
+6.	[x] Documentación en general
 7.	[x] Preguntas frecuentes
 
 En ese momento, yo no manejaba del todo los sistemas de control de versiones y debido a que “deje de darle soporte” el mismo, fue reemplazado por un drupal. Sitio actual que se encuentra en el departamento de sistemas.
