@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 DJANGO_APPS = [
+    # Aplicaciones propias del framework Django
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -40,6 +41,7 @@ DJANGO_APPS = [
 ]
 
 THIRD_PARTY_APPS = [
+    # Librerías / aplicaciones de terceros
     'ckeditor',
 ]
 
@@ -47,6 +49,8 @@ LOCAL_APPS = [
     # Acá configuramos nuestras propias aplicaciones.
     'apps.anuncios',
     'apps.documentos',
+    'apps.academicos',
+    'apps.usuarios'
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
