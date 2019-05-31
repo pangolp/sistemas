@@ -5,20 +5,22 @@ En el año 2013 / 2014, desempeñe tareas administrativas para el departamento d
 
 Si bien el proyecto original no se encontraba dividido en apps o módulos, permitía registrar los siguientes modelos de datos. Por modelo, hacerlo mención a las tablas, las cuales son creadas gracias al ORM de Django.
 
-1. [x] Etiqueta / categoría (sobre novedades)
-2. [x] Novedades
-3. [ ] Practicas supervisadas
+1. Anuncios
+	- [x] Categoria
+	- [x] Novedad
+	- [x] Evento
+	- [x] Faq (Preguntas frecuentes)
+2. Academico
+	- [ ] Ps (Practica supervisada)
+	- [x] Materias
+	- [ ] Aulas
+3. Documentación en general
+	- [x] Programa (Syllabus)
+4. Usuarios
+	- [ ] Autoridades
 	- [ ] Alumnos
 	- [ ] Docentes
-	- [ ] Practica
-4. [x] Eventos
-5. [ ] Materias
-	- [ ] Ayudantes
-	- [ ] Materia
-	- [ ] Programa (Syllabus)
-	- [ ] Aula asignada
-6.	[x] Documentación en general
-7.	[x] Preguntas frecuentes
+	
 
 En ese momento, yo no manejaba del todo los sistemas de control de versiones y debido a que “deje de darle soporte” el mismo, fue reemplazado por un drupal. Sitio actual que se encuentra en el departamento de sistemas.
 
