@@ -1,6 +1,8 @@
 ## Departamento de ingeniería en sistemas de información.
 ### Universidad Tecnología Nacional – Regional La Plata.
 
+![Sistemas 2014](static/img/example.png)
+
 En el año 2013 / 2014, desempeñe tareas administrativas para el departamento de ingeniería en sistemas de información, como becario de dicho departamento. En un momento, surgió la necesidad de tener un sitio web propio, autoadministrable, que le permita a cualquier usuario registrado, la posibilidad de subir contenido al mismo.
 
 Si bien el proyecto original no se encontraba dividido en apps o módulos, permitía registrar los siguientes modelos de datos. Por modelo, hacerlo mención a las tablas, las cuales son creadas gracias al ORM de Django.
